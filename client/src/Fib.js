@@ -35,12 +35,13 @@ class Fib extends Component {
   };
 
   renderSeenIndexes() {
-    return this.state.seenIndexes.map(({ number }) => number).join(', ');
+    // return this.state.seenIndexes.map(({ number }) => number).join(', ');
+    return 10000;
   }
 
   renderValues() {
     const entries = [];
-
+    // eslint-disable-next-line
     for (let key in this.state.values) {
       entries.push(
         <div key={key}>
